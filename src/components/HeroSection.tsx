@@ -36,7 +36,7 @@ const HeroSection = () => {
           <button className="bg-[#d4af37] text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-colors">
             Book Appointment
           </button>
-          <button className="border border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition-colors hover:border-[#d4af37]">
+          <button className="border border-white text-white font-bold py-3 px-6 rounded-lg hover:border-[#d4af37] transition-colors">
             View Services
           </button>
         </div>

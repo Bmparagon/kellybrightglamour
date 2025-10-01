@@ -5,47 +5,81 @@ export const SALON_DATA: SalonData = {
   tagline: "Where Style Meets Precision",
   
   services: [
+    // Barbing
     { 
       id: 1, 
-      name: 'Signature Cut', 
+      name: 'Signature Cut',
+      category: 'Barbing',
       price: 10_000, 
       duration: 45,
       description: 'Premium haircut with consultation and styling'
     },
     { 
       id: 2, 
-      name: 'Classic Shave', 
+      name: 'Classic Shave',
+      category: 'Barbing',
       price: 5_000, 
       duration: 30,
       description: 'Traditional hot towel shave experience'
     },
     { 
       id: 3, 
-      name: 'Beard Sculpting', 
+      name: 'Beard Sculpting',
+      category: 'Barbing',
       price: 3_000, 
       duration: 25,
       description: 'Professional beard trim and shaping'
     },
+    // Hair Services
     { 
       id: 4, 
-      name: 'Full Experience', 
-      price: 10_000, 
-      duration: 75,
-      description: 'Cut, shave, and beard grooming package'
+      name: 'Color & Highlights',
+      category: 'Hair Services',
+      price: 15_000, 
+      duration: 90,
+      description: 'Vibrant, lasting color from expert stylists.'
     },
     { 
       id: 5, 
-      name: 'Quick Trim', 
-      price: 3_000, 
-      duration: 20,
-      description: 'Fast and efficient touch-up'
+      name: 'Keratin Treatment',
+      category: 'Hair Services',
+      price: 25_000, 
+      duration: 120,
+      description: 'Smooth and straighten hair for a frizz-free look.'
     },
+    // Beauty Treatments
     { 
       id: 6, 
-      name: 'Hair Wash & Style', 
-      price: 3_000, 
+      name: 'Signature Facial',
+      category: 'Beauty Treatments',
+      price: 8_000, 
+      duration: 60,
+      description: 'Customized facial to rejuvenate and refresh your skin.'
+    },
+    { 
+      id: 7, 
+      name: 'Manicure & Pedicure',
+      category: 'Beauty Treatments',
+      price: 7_000, 
+      duration: 50,
+      description: 'Complete nail care for a polished and clean look.'
+    },
+    // Spa & Wellness
+    { 
+      id: 8, 
+      name: 'Deep Tissue Massage',
+      category: 'Spa & Wellness',
+      price: 12_000, 
+      duration: 60,
+      description: 'Intensive massage to relieve chronic muscle tension.'
+    },
+    { 
+      id: 9, 
+      name: 'Aromatherapy Session',
+      category: 'Spa & Wellness',
+      price: 6_000, 
       duration: 30,
-      description: 'Deep cleanse with professional styling'
+      description: 'Relaxing session with essential oils to soothe your mind.'
     }
   ],
 
@@ -55,21 +89,36 @@ export const SALON_DATA: SalonData = {
       name: 'Marcus Rodriguez',
       specialty: 'Modern Fades & Textures',
       experience: '12 years',
-      rating: 4.9
+      rating: 4.9,
+      bio: 'Marcus is a master of precision cutting, creating sharp, clean looks that are both modern and timeless. He is passionate about continuous learning and staying ahead of trends.',
+      image: '/team/stylist-1.jpg',
+      social: {
+        instagram: '#'
+      }
     },
     {
       id: 2,
       name: 'James Thompson',
       specialty: 'Classic Cuts & Shaves',
       experience: '8 years',
-      rating: 4.8
+      rating: 4.8,
+      bio: 'With a steady hand and a keen eye for detail, James specializes in traditional barbering techniques, delivering classic styles with a touch of modern sophistication.',
+      image: '/team/stylist-2.jpg',
+      social: {
+        instagram: '#'
+      }
     },
     {
       id: 3,
       name: 'Antonio Silva',
       specialty: 'Beard Artistry',
       experience: '6 years',
-      rating: 4.9
+      rating: 4.9,
+      bio: 'Antonio is a true artist when it comes to beards. From sculpting and shaping to maintenance and care, he helps clients achieve their ultimate beard goals.',
+      image: '/team/stylist-3.jpg',
+      social: {
+        instagram: '#'
+      }
     }
   ],
 
