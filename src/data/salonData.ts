@@ -122,6 +122,17 @@ export const SALON_DATA: SalonData = {
     }
   ],
 
+  gallery: [
+    { id: 1, src: '/gallery/hair-1.jpg', alt: 'A stylish haircut', category: 'Hair', service: 'Women\'s Cut' },
+    { id: 2, src: '/gallery/beauty-1.jpg', alt: 'A beauty treatment', category: 'Beauty', service: 'Facial' },
+    { id: 3, src: '/gallery/barbing-1.jpg', alt: 'A sharp beard trim', category: 'Barbing', service: 'Beard Trim' },
+    { id: 4, src: '/gallery/color-1.jpg', alt: 'Vibrant hair color', category: 'Color', service: 'Balayage' },
+    { id: 5, src: '/gallery/hair-2.jpg', alt: 'A stylish haircut', category: 'Hair', service: 'Men\'s Cut' },
+    { id: 6, src: '/gallery/beauty-2.jpg', alt: 'A beauty treatment', category: 'Beauty', service: 'Manicure' },
+    { id: 7, src: '/gallery/barbing-2.jpg', alt: 'A classic shave', category: 'Barbing', service: 'Hot Shave' },
+    { id: 8, src: '/gallery/color-2.jpg', alt: 'Vibrant hair color', category: 'Color', service: 'Highlights' },
+  ],
+
   hours: {
     'Mon-Fri': '9:00 AM - 7:00 PM',
     'Saturday': '8:00 AM - 6:00 PM',

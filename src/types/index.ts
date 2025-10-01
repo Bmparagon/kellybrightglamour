@@ -7,6 +7,14 @@ export interface Service {
   category: string;
 }
 
+export interface GalleryImage {
+  id: number;
+  src: string;
+  alt: string;
+  category: string;
+  service: string;
+}
+
 export interface Barber {
   id: number;
   name: string;
@@ -25,6 +33,7 @@ export interface SalonData {
   tagline: string;
   services: Service[];
   barbers: Barber[];
+  gallery: GalleryImage[];
   hours: Record<string, string>;
   contact: Record<string, string>;
 }
