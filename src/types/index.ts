@@ -7,6 +7,15 @@ export interface Service {
   category: string;
 }
 
+export interface Testimonial {
+  id: number;
+  quote: string;
+  name: string;
+  image?: string;
+  rating: number;
+  source: string;
+}
+
 export interface GalleryImage {
   id: number;
   src: string;
@@ -34,6 +43,7 @@ export interface SalonData {
   services: Service[];
   barbers: Barber[];
   gallery: GalleryImage[];
+  testimonials: Testimonial[];
   hours: Record<string, string>;
   contact: Record<string, string>;
 }

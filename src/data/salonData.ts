@@ -133,6 +133,33 @@ export const SALON_DATA: SalonData = {
     { id: 8, src: '/gallery/color-2.jpg', alt: 'Vibrant hair color', category: 'Color', service: 'Highlights' },
   ],
 
+  testimonials: [
+    {
+      id: 1,
+      quote: 'The best haircut I have ever had! The attention to detail is unmatched. I felt like a new person walking out of the salon.',
+      name: 'Jessica Miller',
+      image: '/testimonials/customer-1.jpg',
+      rating: 5,
+      source: 'Verified Google Review'
+    },
+    {
+      id: 2,
+      quote: 'An amazing experience from start to finish. The stylists are true professionals and the atmosphere is so relaxing.',
+      name: 'Sarah Chen',
+      image: '/testimonials/customer-2.jpg',
+      rating: 5,
+      source: 'Verified Yelp Review'
+    },
+    {
+      id: 3,
+      quote: 'I came in for a beard trim and was blown away by the skill and precision. I will definitely be back.',
+      name: 'David Rodriguez',
+      image: '/testimonials/customer-3.jpg',
+      rating: 4.5,
+      source: 'Verified Google Review'
+    }
+  ],
+
   hours: {
     'Mon-Fri': '9:00 AM - 7:00 PM',
     'Saturday': '8:00 AM - 6:00 PM',
