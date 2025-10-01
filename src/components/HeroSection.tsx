@@ -1,0 +1,53 @@
+
+import React from 'react';
+
+const HeroSection = () => {
+  return (
+    <section className="relative flex items-center justify-center h-screen bg-black text-white overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+        style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+      >
+        {/* I will use a placeholder video, replace with actual video */}
+        <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+
+      <div className="relative z-20 text-center">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">
+          <span className="animate-fadeInUp" style={{ animationDelay: '0.2s' }}>Transform </span>
+          <span className="animate-fadeInUp" style={{ animationDelay: '0.4s' }}>Your </span>
+          <span className="animate-fadeInUp" style={{ animationDelay: '0.6s' }}>Look, </span>
+          <span className="animate-fadeInUp" style={{ animationDelay: '0.8s' }}>Elevate </span>
+          <span className="animate-fadeInUp" style={{ animationDelay: '1s' }}>Your </span>
+          <span className="animate-fadeInUp" style={{ animationDelay: '1.2s' }}>Confidence</span>
+        </h1>
+        <p className="text-lg md:text-xl text-gray-400 mb-8 animate-fadeIn" style={{ animationDelay: '1.5s' }}>
+          Step into a world of style and sophistication.
+        </p>
+        <div className="flex justify-center gap-4 animate-fadeIn" style={{ animationDelay: '1.8s' }}>
+          <button className="bg-[#d4af37] text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-colors">
+            Book Appointment
+          </button>
+          <button className="border border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition-colors hover:border-[#d4af37]">
+            View Services
+          </button>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
