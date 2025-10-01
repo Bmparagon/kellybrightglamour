@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <ServicesSection />
-      <TeamSection />
-      <GallerySection />
-      <TestimonialsSection />
-      <BookingContactSection />
+      <div id="services"><ServicesSection /></div>
+      <div id="team"><TeamSection /></div>
+      <div id="gallery"><GallerySection /></div>
+      <div id="testimonials"><TestimonialsSection /></div>
+      <div id="contact"><BookingContactSection /></div>
     </main>
   );
 }
