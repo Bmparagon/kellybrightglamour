@@ -41,9 +41,9 @@ const GallerySection = () => {
   };
 
   return (
-    <section className="bg-black py-20">
+    <section className="dark:bg-black bg-white py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Our Work</h2>
+        <h2 className="text-4xl font-bold text-center dark:text-white text-black mb-12">Our Work</h2>
         <FilterControls setFilter={setFilter} currentFilter={filter} />
         <GalleryGrid images={filteredImages} onImageClick={openLightbox} />
         {selectedImage && (

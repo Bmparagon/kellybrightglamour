@@ -15,7 +15,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({ setFilter, currentFilte
         <button
           key={filter}
           onClick={() => setFilter(filter)}
-          className={`text-lg font-semibold transition-colors duration-300 ${currentFilter === filter ? 'text-[#f4e4c1] border-b-2 border-[#d4af37]' : 'text-[#b0b0b0] hover:text-[#d4af37]'}`}>
+          className={`text-lg font-semibold transition-colors duration-300 ${currentFilter === filter ? 'dark:text-[#f4e4c1] text-black border-b-2 border-[#d4af37]' : 'dark:text-[#b0b0b0] text-gray-500 hover:text-[#d4af37]'}`}>
           {filter}
         </button>
       ))}

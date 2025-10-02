@@ -6,11 +6,11 @@ import Map from './booking/Map';
 
 const BookingContactSection = () => {
   return (
-    <section className="bg-[#0f1419] py-20">
+    <section className="dark:bg-[#0f1419] bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="bg-[#141e28]/80 border border-[#d4af37]/20 rounded-xl p-8">
-            <h2 className="text-4xl font-bold text-center text-white mb-8">Book an Appointment</h2>
+          <div className="dark:bg-[#141e28]/80 bg-gray-100/80 border border-[#d4af37]/20 rounded-xl p-8">
+            <h2 className="text-4xl font-bold text-center dark:text-white text-black mb-8">Book an Appointment</h2>
             <BookingForm />
           </div>
           <div className="space-y-8">

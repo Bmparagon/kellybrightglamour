@@ -24,8 +24,8 @@ const GalleryGrid: React.FC<GalleryGridProps> = ({ images, onImageClick }) => {
             height={500}
             className="object-cover w-full h-full transition-transform duration-400 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <p className="text-[#f4e4c1] text-lg font-semibold">{image.service}</p>
+          <div className="absolute inset-0 dark:bg-black/60 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <p className="dark:text-[#f4e4c1] text-black text-lg font-semibold">{image.service}</p>
           </div>
         </div>
       ))}

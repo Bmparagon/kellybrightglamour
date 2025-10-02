@@ -23,9 +23,9 @@ const TestimonialsSection = () => {
   }, [nextSlide]);
 
   return (
-    <section className="bg-[#1a1a1a] py-20">
+    <section className="dark:bg-[#1a1a1a] bg-white py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">What Our Clients Say</h2>
+        <h2 className="text-4xl font-bold text-center dark:text-white text-black mb-12">What Our Clients Say</h2>
         <div className="relative overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full mx-1 transition-colors ${currentIndex === index ? 'bg-[#d4af37]' : 'bg-[#3a3a3a]'}`}>
+              className={`w-3 h-3 rounded-full mx-1 transition-colors ${currentIndex === index ? 'bg-[#d4af37]' : 'dark:bg-[#3a3a3a] bg-gray-300'}`}>
             </button>
           ))}
         </div>

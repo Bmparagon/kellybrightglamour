@@ -11,9 +11,9 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
   return (
-    <div className="bg-[#1e1e1e]/60 border border-[#d4af37]/20 rounded-xl p-8 shadow-lg w-full max-w-2xl mx-auto">
+    <div className="dark:bg-[#1e1e1e]/60 bg-gray-100/60 border border-[#d4af37]/20 rounded-xl p-8 shadow-lg w-full max-w-2xl mx-auto">
       <StarRating rating={testimonial.rating} className="mb-4" />
-      <p className="text-[#e0e0e0] text-lg italic leading-relaxed mb-6">“{testimonial.quote}”</p>
+      <p className="dark:text-[#e0e0e0] text-gray-700 text-lg italic leading-relaxed mb-6">“{testimonial.quote}”</p>
       <div className="flex items-center">
         {testimonial.image && (
           <Image
@@ -25,8 +25,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
           />
         )}
         <div>
-          <p className="font-bold text-[#f4e4c1]">{testimonial.name}</p>
-          <div className="flex items-center text-sm text-[#8a8a8a]">
+          <p className="font-bold dark:text-[#f4e4c1] text-gray-800">{testimonial.name}</p>
+          <div className="flex items-center text-sm dark:text-[#8a8a8a] text-gray-500">
             <CheckCircle size={16} className="mr-1 text-green-500" />
             {testimonial.source}
           </div>

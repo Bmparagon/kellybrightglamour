@@ -23,7 +23,7 @@ const Lightbox: React.FC<LightboxProps> = ({ image, onClose, onNext, onPrev }) =
   }, [onClose, onNext, onPrev]);
 
   return (
-    <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center animate-fadeIn" onClick={onClose}>
+    <div className="fixed inset-0 dark:bg-black/95 bg-white/95 z-50 flex items-center justify-center animate-fadeIn" onClick={onClose}>
       <div className="relative w-full h-full max-w-4xl max-h-4/5" onClick={e => e.stopPropagation()}>
         <Image
           src={image.src}
@@ -33,13 +33,13 @@ const Lightbox: React.FC<LightboxProps> = ({ image, onClose, onNext, onPrev }) =
           className="animate-fadeInUp"
         />
       </div>
-      <button onClick={onClose} className="absolute top-6 right-6 text-white hover:text-[#d4af37] transition-colors">
+      <button onClick={onClose} className="absolute top-6 right-6 dark:text-white text-black hover:text-[#d4af37] transition-colors">
         <X size={32} />
       </button>
-      <button onClick={onPrev} className="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:text-[#d4af37] transition-colors">
+      <button onClick={onPrev} className="absolute left-6 top-1/2 -translate-y-1/2 dark:text-white text-black hover:text-[#d4af37] transition-colors">
         <ChevronLeft size={48} />
       </button>
-      <button onClick={onNext} className="absolute right-6 top-1/2 -translate-y-1/2 text-white hover:text-[#d4af37] transition-colors">
+      <button onClick={onNext} className="absolute right-6 top-1/2 -translate-y-1/2 dark:text-white text-black hover:text-[#d4af37] transition-colors">
         <ChevronRight size={48} />
       </button>
     </div>

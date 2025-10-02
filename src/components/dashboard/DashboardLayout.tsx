@@ -5,24 +5,24 @@ import { LayoutDashboard, Calendar, User, LogOut } from 'lucide-react';
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex min-h-screen bg-black">
+    <div className="flex min-h-screen dark:bg-black bg-white">
       {/* Sidebar */}
-      <aside className="w-64 bg-[#0a0a0a] text-white p-6 flex flex-col justify-between">
+      <aside className="w-64 dark:bg-[#0a0a0a] bg-gray-100 dark:text-white text-black p-6 flex flex-col justify-between">
         <div>
           <h2 className="text-2xl font-bold text-[#d4af37] mb-8">Dashboard</h2>
           <nav className="space-y-4">
-            <Link href="/dashboard" className="flex items-center p-2 rounded-lg hover:bg-[#1a1a1a]"><LayoutDashboard className="mr-3" /> Overview</Link>
-            <Link href="/dashboard/bookings" className="flex items-center p-2 rounded-lg hover:bg-[#1a1a1a]"><Calendar className="mr-3" /> My Bookings</Link>
-            <Link href="/dashboard/profile" className="flex items-center p-2 rounded-lg hover:bg-[#1a1a1a]"><User className="mr-3" /> Profile</Link>
+            <Link href="/dashboard" className="flex items-center p-2 rounded-lg dark:hover:bg-[#1a1a1a] hover:bg-gray-200"><LayoutDashboard className="mr-3" /> Overview</Link>
+            <Link href="/dashboard/bookings" className="flex items-center p-2 rounded-lg dark:hover:bg-[#1a1a1a] hover:bg-gray-200"><Calendar className="mr-3" /> My Bookings</Link>
+            <Link href="/dashboard/profile" className="flex items-center p-2 rounded-lg dark:hover:bg-[#1a1a1a] hover:bg-gray-200"><User className="mr-3" /> Profile</Link>
           </nav>
         </div>
         <div>
-            <Link href="/" className="flex items-center p-2 rounded-lg hover:bg-[#1a1a1a]"><LogOut className="mr-3" /> Logout</Link>
+            <Link href="/" className="flex items-center p-2 rounded-lg dark:hover:bg-[#1a1a1a] hover:bg-gray-200"><LogOut className="mr-3" /> Logout</Link>
         </div>
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-10 bg-[#1a1a1a]">
+      <main className="flex-1 p-10 dark:bg-[#1a1a1a] bg-white">
         {children}
       </main>
     </div>

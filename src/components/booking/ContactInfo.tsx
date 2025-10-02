@@ -5,8 +5,8 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide
 
 const ContactInfo = () => {
   return (
-    <div className="text-white">
-      <h3 className="text-3xl font-bold text-[#f4e4c1] mb-6">Get in Touch</h3>
+    <div className="dark:text-white text-black">
+      <h3 className="text-3xl font-bold dark:text-[#f4e4c1] text-gray-800 mb-6">Get in Touch</h3>
       <div className="space-y-4">
         <div className="flex items-start">
           <MapPin size={24} className="text-[#d4af37] mr-4 mt-1" />
@@ -30,11 +30,11 @@ const ContactInfo = () => {
         </div>
       </div>
       <div className="mt-8">
-        <h4 className="text-xl font-bold text-[#f4e4c1] mb-4">Follow Us</h4>
+        <h4 className="text-xl font-bold dark:text-[#f4e4c1] text-gray-800 mb-4">Follow Us</h4>
         <div className="flex items-center gap-4">
-          <a href="#" className="text-[#b0b0b0] hover:text-[#d4af37] transition-colors"><Instagram size={32} /></a>
-          <a href="#" className="text-[#b0b0b0] hover:text-[#d4af37] transition-colors"><Facebook size={32} /></a>
-          <a href="#" className="text-[#b0b0b0] hover:text-[#d4af37] transition-colors"><Twitter size={32} /></a>
+          <a href="#" className="dark:text-[#b0b0b0] text-gray-500 hover:text-[#d4af37] transition-colors"><Instagram size={32} /></a>
+          <a href="#" className="dark:text-[#b0b0b0] text-gray-500 hover:text-[#d4af37] transition-colors"><Facebook size={32} /></a>
+          <a href="#" className="dark:text-[#b0b0b0] text-gray-500 hover:text-[#d4af37] transition-colors"><Twitter size={32} /></a>
         </div>
       </div>
     </div>
