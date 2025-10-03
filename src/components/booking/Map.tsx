@@ -1,14 +1,18 @@
 
 import React from 'react';
+import { SALON_DATA } from '@/data/salonData';
 
 const Map = () => {
   return (
-    <div className="h-full w-full dark:bg-[#1a1a1a] bg-gray-100 rounded-lg flex items-center justify-center border border-[#d4af37]/20">
-      <p className="dark:text-[#b0b0b0] text-gray-500 text-center">
-        Google Map will be embedded here.
-        <br />
-        Please replace this with your Google Maps embed code.
-      </p>
+    <div className="h-[450px] w-full overflow-hidden dark:bg-[#1a1a1a] bg-gray-100 rounded-lg border border-[#d4af37]/20">
+      <iframe
+        title="Kelly-Bright Glamour Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7277773724484!2d3.4217167!3d6.4280556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5329792aaa7%3A0x8097d269f6901ee!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1696363557974!5m2!1sen!2sng"
+        className="w-full h-full border-0"
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
     </div>
   );
 };
