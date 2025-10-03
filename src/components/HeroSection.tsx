@@ -23,12 +23,18 @@ const HeroSection = () => {
           Step into a world of style and sophistication.
         </p>
         <div className="flex justify-center gap-4 animate-fadeIn" style={{ animationDelay: '1.8s' }}>
-          <button className="bg-[#d4af37] text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-colors">
+          <a 
+            href="#contact" 
+            className="bg-[#d4af37] text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-colors"
+          >
             Book Appointment
-          </button>
-          <button className="border border-white text-white font-bold py-3 px-6 rounded-lg hover:border-[#d4af37] transition-colors">
+          </a>
+          <a 
+            href="#services" 
+            className="border border-white text-white font-bold py-3 px-6 rounded-lg hover:border-[#d4af37] transition-colors"
+          >
             View Services
-          </button>
+          </a>
         </div>
       </div>
 

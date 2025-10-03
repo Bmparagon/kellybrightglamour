@@ -10,7 +10,7 @@ const ServiceCard = ({ service }: { service: Service }) => {
       <p className="dark:text-[#b0b0b0] text-gray-500 text-sm mb-4 h-10">{service.description}</p>
             <div className="flex justify-between items-center mb-4">
         <p className="text-lg font-semibold text-[#d4af37]">
-          {(service.price / 100).toLocaleString('en-NG', { style: 'currency', currency: 'NGN' })}
+          {service.price.toLocaleString('en-NG', { style: 'currency', currency: 'NGN' })}
         </p>
         <p className="text-sm text-[#b0b0b0]">{service.duration} min</p>
       </div>

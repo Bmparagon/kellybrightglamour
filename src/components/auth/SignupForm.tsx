@@ -91,7 +91,8 @@ const SignupForm = () => {
 
   const onSubmit: SubmitHandler<IFormInput> = data => {
     console.log(data);
-    alert('Signup submitted! (Check console for data)');
+    // Redirect to login page after successful signup
+    window.location.href = '/login';
   };
 
   const nextStep = async () => {

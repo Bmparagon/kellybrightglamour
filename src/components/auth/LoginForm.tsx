@@ -17,7 +17,8 @@ const LoginForm = () => {
 
   const onSubmit: SubmitHandler<IFormInput> = data => {
     console.log(data);
-    alert('Login submitted! (Check console for data)');
+    // Redirect to dashboard after successful login
+    window.location.href = '/dashboard';
   };
 
   return (

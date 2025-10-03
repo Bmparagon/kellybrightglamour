@@ -36,19 +36,31 @@ const TestimonialsSection = () => {
               </div>
             ))}
           </div>
-          <button onClick={prevSlide} className="absolute top-1/2 -translate-y-1/2 left-4 bg-[#d4af37]/10 text-[#d4af37] rounded-full p-2 hover:bg-[#d4af37]/20 transition-colors">
+          <button 
+            type="button"
+            onClick={prevSlide} 
+            aria-label="Previous testimonial"
+            className="absolute top-1/2 -translate-y-1/2 left-4 bg-[#d4af37]/10 text-[#d4af37] rounded-full p-2 hover:bg-[#d4af37]/20 transition-colors focus:outline-none focus:ring-2 focus:ring-[#d4af37]">
             <ChevronLeft size={32} />
           </button>
-          <button onClick={nextSlide} className="absolute top-1/2 -translate-y-1/2 right-4 bg-[#d4af37]/10 text-[#d4af37] rounded-full p-2 hover:bg-[#d4af37]/20 transition-colors">
+          <button 
+            type="button"
+            onClick={nextSlide} 
+            aria-label="Next testimonial"
+            className="absolute top-1/2 -translate-y-1/2 right-4 bg-[#d4af37]/10 text-[#d4af37] rounded-full p-2 hover:bg-[#d4af37]/20 transition-colors focus:outline-none focus:ring-2 focus:ring-[#d4af37]">
             <ChevronRight size={32} />
           </button>
         </div>
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-8" role="tablist" aria-label="Testimonial slides">
           {SALON_DATA.testimonials.map((_, index) => (
             <button
+              type="button"
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full mx-1 transition-colors ${currentIndex === index ? 'bg-[#d4af37]' : 'dark:bg-[#3a3a3a] bg-gray-300'}`}>
+              aria-label={`Go to slide ${index + 1}`}
+              aria-selected={currentIndex === index}
+              role="tab"
+              className={`w-3 h-3 rounded-full mx-1 transition-colors focus:outline-none focus:ring-2 focus:ring-[#d4af37] ${currentIndex === index ? 'bg-[#d4af37]' : 'dark:bg-[#3a3a3a] bg-gray-300'}`}>
             </button>
           ))}
         </div>

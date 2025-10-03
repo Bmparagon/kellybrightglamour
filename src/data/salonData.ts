@@ -167,8 +167,8 @@ export const SALON_DATA: SalonData = {
   },
 
   contact: {
-    phone: '(555) 987-6543',
-    email: 'hello@apexbarberstudio.com',
-    address: '456 Style Avenue, Downtown District, NY 10001'
+    phone: '+234 806 390 2370',
+    email: 'kbglamour@gmail.com',
+    address: '123 Victoria Island, Lagos, Nigeria'
   }
 };
