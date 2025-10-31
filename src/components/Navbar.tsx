@@ -58,8 +58,8 @@ const Navbar = () => {
           <Link href="#testimonials" className="text-black dark:text-white hover:text-[#d4af37] transition-colors" onClick={toggleMenu}>Testimonials</Link>
           <Link href="#contact" className="text-black dark:text-white hover:text-[#d4af37] transition-colors" onClick={toggleMenu}>Contact</Link>
           <div className="flex items-center gap-4">
-            <Link href="/login" className="bg-[#d4af37] text-black font-bold py-2 px-4 rounded-lg hover:bg-[#c29a2f] transition-colors">Login</Link>
-            <Link href="/signup" className="border border-[#d4af37] text-[#d4af37] font-bold py-2 px-4 rounded-lg hover:bg-[#d4af37] hover:text-black transition-colors">Sign Up</Link>
+            <Link href="/login" className="bg-[#d4af37] text-black font-bold py-2 px-4 rounded-lg hover:bg-[#c29a2f] transition-colors" onClick={toggleMenu}>Login</Link>
+            <Link href="/signup" className="border border-[#d4af37] text-[#d4af37] font-bold py-2 px-4 rounded-lg hover:bg-[#d4af37] hover:text-black transition-colors" onClick={toggleMenu}>Sign Up</Link>
           </div>
         </div>
       </div>
