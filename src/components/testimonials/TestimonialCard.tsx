@@ -26,10 +26,6 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
         )}
         <div>
           <p className="font-bold dark:text-[#f4e4c1] text-gray-800">{testimonial.name}</p>
-          <div className="flex items-center text-sm dark:text-[#8a8a8a] text-gray-500">
-            <CheckCircle size={16} className="mr-1 text-green-500" />
-            {testimonial.source}
-          </div>
         </div>
       </div>
     </div>
